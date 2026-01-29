@@ -1,15 +1,18 @@
-PS C:\Users\Rasta X\Desktop\BigTree Apps\BigTree_Diary> node server.js
-node:internal/modules/cjs/loader:1228
-  throw err;
-  ^
+Can we create a diary app that will also have a calender inside that will have a xitsonga version on days and time of the day like nampundzu, nhlekani, namadyambu. Then it must also have a weather so that user can plan their week knowing what kind of a day to expect. It must also allow a user to set event. And it must ring alarm when the event day and time has arrive. It can also set alarm specifically for waking up or starting something on an actual time. And it must have a vault where user will set a code, pin or password. Where they'll store their private events. And it must allow a user to set a background wallpaper for the app instead of a default white background. It must also have a dark mode so when users like the dark mode they can use it without removing their chosen background wallpaper.
 
-Error: Cannot find module 'C:\Users\Rasta X\Desktop\BigTree Apps\BigTree_Diary\server.js'
-    at Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
-    at Module._load (node:internal/modules/cjs/loader:1051:27)
-    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
-    at node:internal/main/run_main_module:28:49 {
-  code: 'MODULE_NOT_FOUND',
-  requireStack: []
-}
+We will name the app 'BigTree Diary'
 
-Node.js v20.17.0
+We are using a gigabyte i3 laptop and we build using VS Code, node.js, github and xampp for development.On time of the day you made a mistake
+
+Morning-nampundzu 4am to 11pm
+Afternoon-nhlekani 11am to 15pm
+Evening-namadyambu 15pm to 22pm
+Night-vusiki 22pm to 4am
+
+And the app should be xitsonga and English only
+
+And I'll create the app preset wallpapers.
+
+Then list steps we have to take to proceed or build this application.
+
+Show the structure of the application.
