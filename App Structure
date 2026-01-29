@@ -1,0 +1,68 @@
+BigTreeDiary/
+├── assets/
+│   ├── images/
+│   │   ├── wallpapers/ (user-added and preset)
+│   │   └── icons/
+│   ├── fonts/
+│   └── translations/
+│       ├── en.json
+│       └── xit.json (Xitsonga translations)
+├── src/
+│   ├── components/
+│   │   ├── Calendar/
+│   │   │   ├── CalendarView.js
+│   │   │   ├── XitsongaCalendar.js
+│   │   │   └── TimeIndicator.js (nampundzu/nhlekani/etc)
+│   │   ├── Diary/
+│   │   │   ├── DiaryEntry.js
+│   │   │   ├── EntryList.js
+│   │   │   └── RichTextEditor.js
+│   │   ├── Weather/
+│   │   │   ├── WeatherWidget.js
+│   │   │   └── ForecastView.js
+│   │   ├── Alarms/
+│   │   │   ├── AlarmManager.js
+│   │   │   ├── EventAlarm.js
+│   │   │   └── NotificationService.js
+│   │   ├── Vault/
+│   │   │   ├── SecureVault.js
+│   │   │   ├── AuthScreen.js
+│   │   │   └── BiometricAuth.js
+│   │   └── UI/
+│   │       ├── ThemeToggle.js
+│   │       ├── WallpaperPicker.js
+│   │       └── LanguageSwitcher.js
+│   ├── screens/
+│   │   ├── HomeScreen.js
+│   │   ├── CalendarScreen.js
+│   │   ├── DiaryScreen.js
+│   │   ├── WeatherScreen.js
+│   │   ├── EventsScreen.js
+│   │   ├── VaultScreen.js
+│   │   └── SettingsScreen.js
+│   ├── services/
+│   │   ├── database/
+│   │   │   ├── db.js (SQLite setup)
+│   │   │   ├── diaryQueries.js
+│   │   │   └── eventQueries.js
+│   │   ├── weather/
+│   │   │   └── WeatherAPI.js
+│   │   ├── notifications/
+│   │   │   └── PushNotifications.js
+│   │   └── security/
+│   │       └── EncryptionService.js
+│   ├── utils/
+│   │   ├── XitsongaTime.js (time of day converter)
+│   │   ├── dateFormatter.js
+│   │   ├── constants.js
+│   │   └── helpers.js
+│   ├── context/
+│   │   ├── ThemeContext.js
+│   │   ├── LanguageContext.js
+│   │   └── AuthContext.js
+│   └── navigation/
+│       ├── AppNavigator.js
+│       └── DrawerNavigator.js
+├── App.js
+├── package.json
+└── README.md
