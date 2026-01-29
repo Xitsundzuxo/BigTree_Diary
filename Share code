@@ -1,18 +1,24 @@
-const mysql = require("mysql2");
+const express = require("express");
+const router = express.Router();
+const db = require("../config/db");
 
-const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "bigtree_diary"
+// Get all diary entries
+router.get("/", (req, res) => {
+  const sql = "SELECT * FROM diary_entries ORDER BY created_at DESC";
+  db.query(sql, (err, results) => {
+    if (err) return res.status(500).json(err);
+    res.json(results);
+  });
 });
 
-db.connect(err => {
-  if (err) {
-    console.error("❌ Database connection failed:", err);
-  } else {
-    console.log("✅ Connected to MySQL database");
-  }
+// Add diary entry
+router.post("/", (req, res) => {
+  const { title, content, mood } = req.body;
+  const sql = "INSERT INTO diary_entries (title, content, mood) VALUES (?, ?, ?)";
+  db.query(sql, [title, content, mood], err => {
+    if (err) return res.status(500).json(err);
+    res.json({ message: "Diary entry saved 🌱" });
+  });
 });
 
-module.exports = db;
+module.exports = router;
